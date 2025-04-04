@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins;
+}
+body{
+    background-image: linear-gradient(#ffffff,#f9fafb);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    height: 100vh;
+}
+body>*{
+    margin: 14px;
+}
+div{margin: 15px;}
+.items1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.items1>:not(:last-child){
+    margin: 14px;
+}
+h2{
+    font-family:poppins;
+}
+p{
+    color: #6C727F;
+    font-size: 14px;
+    line-height: 1.8em;
+}
+
+form{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding:18px 48px 14px 48px;
+    background-color: #ffffff;
+    border-radius: 1rem;
+    box-shadow: -2px 5px 4px 3px rgba(229,231,235,1), 2px 5px 4px 3px rgba(229,231,235, 1);
+    max-width: 660px;
+}
+input[type=email]{
+    line-height: 3rem;
+    padding-left: 5px;
+    font-weight: bold;
+    border-radius: 2vh;
+    border: 1px solid #39415055;
+    background-color: #eaeff9fa;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease-out;
+}
+
+input[type=email]::placeholder{
+    text-align: center;
+}
+
+input[type=email]:hover{transform: scale(1.01);}
+
+button{
+    padding: 0.5em;
+    line-height: 3rem;
+    font-weight: bold;
+    font-family: poppins;
+    background-color: #284BCE;
+    color: #ffffff;
+    border: none;
+    border-radius: 2vh;
+    margin-bottom: 1rem;
+    transition: all 0.2s ease-out ;
+}
+button:hover{
+    transform: scale(1.01);
+    
+}
+form>p{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    color: #6C727F;
+}
+
+@media (min-width:1024px) {
+    form{
+        margin-left: auto;
+        margin-right: auto;
+        width: 40vw;
+        max-width: 660px;
+    }
+}
