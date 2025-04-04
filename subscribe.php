@@ -1,4 +1,5 @@
 <?php
+echo "Hi";
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Get the email address from the form
     $userEmail = filter_var($_POST['userEmail'], FILTER_SANITIZE_EMAIL);
