@@ -11,6 +11,7 @@ body{
     justify-content: center;
     align-content: center;
     height: 100vh;
+    overflow-x:hidden;
 }
 body>*{
     margin: 14px;
